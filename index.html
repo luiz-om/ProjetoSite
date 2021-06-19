@@ -1,81 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Princial</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        header {
+            background-color: rgba(255, 205, 205, 0.2);
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        
+        header nav ul {
+            display: flex;
+        }
+        
+        header nav ul li {
+            display: flex;
+            list-style: none;
+            margin: 0 15px;
+        }
+        
+        header nav ul li:first-child {
+            margin-left: 0;
+        }
+        
+        header nav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        @media (max-width:700px) {
+            header {
+                flex-direction: column;
+            }
+            header h1 {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <p la></p>
-       <div> 
-           <a href="#">Pousada Secreta</a>
-        </div>
-       <div> 
-            <a href="#sobre">Sobre</a>
-               <a href="#rotas">Rotas</a>
-             <a href="#quartos">Quartos</a>
-    </div>
-    
-    </div>
-  
+    <header>
+
+        <h1>
+            <a href="#">Pousada Secreta</a>
+        </h1>
+        <nav>
+
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#rotas">Rotas</a></li>
+                <li><a href="#quartos">Quartos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
     <h1>Pousada Secreta</h1>
 
     <p>A pousada reservada em Angra dos Reis</p>
 
     <h2>Seja bem-vindo(a)</h2>
 
-<p>relaxe em nossa acomodações e curta o melhor de Angra dos reis</p>
+    <p>relaxe em nossa acomodações e curta o melhor de Angra dos reis</p>
 
-<p>Temos quartos para solteiro,casal ou familia</p>
+    <p>Temos quartos para solteiro,casal ou familia</p>
 
-<img src="assets/quarto-solteiro1.jpg" alt="quarto-solteiro1" >
+    <img src="assets/quarto-solteiro1.jpg" alt="quarto-solteiro1">
 
-<a href="#" target="_blank" >Quarto de Solteiro</a>
+    <a href="#" target="_blank">Quarto de Solteiro</a>
 
-<img src="assets/quarto-casal1.jpg" alt="">
-<a href="#" target="_blank" >Quarto de Casal</a>
+    <img src="assets/quarto-casal1.jpg" alt="">
+    <a href="#" target="_blank">Quarto de Casal</a>
 
-<img src="assets/quarto-familia1.jpg" alt="">
-<a href="#" >Quarto Familia</a>
-<h2>Rota</h2>
-<p>Veja como chegar até a pousada</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356473.0015368416!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e1!3m2!1spt-BR!2sbr!4v1620613940080!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <img src="assets/quarto-familia1.jpg" alt="">
+    <a href="#">Quarto Familia</a>
+    <h2>Rota</h2>
+    <p>Veja como chegar até a pousada</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356473.0015368416!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e1!3m2!1spt-BR!2sbr!4v1620613940080!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-<h2>Sobre a pousada!</h2>
-<p>Conheça um pouco sobre nossa pousada.</p>
+    <h2>Sobre a pousada!</h2>
+    <p>Conheça um pouco sobre nossa pousada.</p>
 
-<h3>A pousada</h3>
-<p>A pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar</p>
-<img src="assets/img1.jpg" alt="">
+    <h3>A pousada</h3>
+    <p>A pousada Dev dispõe de estacionamento privativo gratuito, piscina ao ar livre e bar</p>
+    <img src="assets/img1.jpg" alt="">
 
-<h3>Nossos quartos</h3>
-<p>os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Amlém disso,as unidades
-    da Pousada Dev contam com ar-condicionado e guarda-roupas.
-</p>
-<img src="assets/img2.jpg" alt="">
+    <h3>Nossos quartos</h3>
+    <p>os quartos possuem TV de tela plana a cabo, cozinha compacta e área para refeições. Amlém disso,as unidades da Pousada Dev contam com ar-condicionado e guarda-roupas.
+    </p>
+    <img src="assets/img2.jpg" alt="">
 
-<h3>Alimentação</h3>
-<p>A pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24 horas.</p>
-<img src="assets/img3.jpg" alt="">
+    <h3>Alimentação</h3>
+    <p>A pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24 horas.</p>
+    <img src="assets/img3.jpg" alt="">
 
-<h3>Recepção</h3>
-<p>Nossa recepção fica aberta 24hs.</p>
-<img src="assets/img5.jpg" alt="">
+    <h3>Recepção</h3>
+    <p>Nossa recepção fica aberta 24hs.</p>
+    <img src="assets/img5.jpg" alt="">
 
-<h4>Entre em contato conosco</h4>
+    <h4>Entre em contato conosco</h4>
 
-<p>Endereço: Rua teste N 89 - Rio de Janeiro RJ</p>
-<p>Cel: 67555557485</p>
+    <p>Endereço: Rua teste N 89 - Rio de Janeiro RJ</p>
+    <p>Cel: 67555557485</p>
 
 
-<p>Faça sua reserva pelo <a href="www.booking.com">Booking.com</a></p>
-<p>Copyright - Luiz-Om</p>
+    <p>Faça sua reserva pelo <a href="www.booking.com">Booking.com</a></p>
+    <p>Copyright - Luiz-Om</p>
 
 
 
 
 
 </body>
+
 </html>
